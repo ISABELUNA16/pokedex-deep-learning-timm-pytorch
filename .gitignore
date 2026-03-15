@@ -1,0 +1,48 @@
+# --- Entornos Virtuales (Específicos de Ubuntu/WSL) ---
+venv/
+venv_wsl/
+env/
+.env
+
+# --- Modelos Entrenados ---
+# 1. Ignorar todos los archivos de pesos por defecto
+*.pth
+*.h5
+*.keras
+
+# 2. EXCEPCIÓN: Permitir EXCLUSIVAMENTE el modelo final deseado
+!pokedex150_timm_model.pth
+
+# 3. Ignorar copias de seguridad o modelos antiguos específicos
+backup_pokedex_model.h5
+*copy.pth
+*old.pth
+
+# --- Datasets (Solo conservamos la estructura de carpetas) ---
+pokemon_datasets/*
+!pokemon_datasets/.gitkeep
+
+# --- Archivos Temporales y Logs de Ejecución ---
+__pycache__/
+*.log
+*.pyc
+.ipynb_checkpoints/
+output.txt
+temp.py
+test_timm/
+
+# --- Resultados de Pruebas e Inferencia Local ---
+# (Archivos generados al ejecutar pruebas de predicción)
+pikachu*.png
+prediction_*.png
+test_model.py
+prediccion_final_pokedex.png
+
+# --- Backups de archivos de metadatos ---
+*_old.csv
+*_old.json
+
+# --- Configuraciones de IDE y Sistema ---
+.vscode/
+.idea/
+.DS_Store
