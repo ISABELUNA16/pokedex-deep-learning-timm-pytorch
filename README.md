@@ -76,3 +76,13 @@ Una vez finalizado el entrenamiento, puedes levantar la aplicación visual para 
 ```bash
 streamlit run app.py
 ```
+
+
+## 5. Gen 1 Pokemon Dataset (`Kaggle`)
+
+Aquí podrás descargar el Dataset de los 151 Pokémon originales con estadísticas únicamente de la primera Generación. Los datos fueron scrapeados de `https://serebii.net/`.
+
+### Link de descarga
+```bash
+- https://www.kaggle.com/datasets/dizzypanda/gen-1-pokemon
+```
